@@ -1,0 +1,18 @@
+[package]
+name = "rust-web-configuration-example"
+version = "0.1.0"
+authors = ["Mario Zupan <mario@zupzup.org>"]
+edition = "2018"
+
+[dependencies]
+tokio = { version = "0.2", features = ["macros", "rt-threaded"] }
+warp = "0.2"
+config = "0.10"
+serde = {version = "1.0", features = ["derive"] }
+lazy_static = "1.4"
+
+[profile.dev]
+debug = 0
+
+[profile.test]
+debug = 0

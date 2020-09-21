@@ -1,0 +1,17 @@
+[server]
+port = "8080"
+url = "http://localhost:8080"
+
+[log]
+level = "info"
+
+[[rules]]
+    name = "all"
+    rule_set = [
+        ">5",
+        "<100",
+    ]
+
+[[rules]]
+    name = "none"
+    rule_set = []

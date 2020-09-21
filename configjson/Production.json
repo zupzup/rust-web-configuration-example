@@ -1,0 +1,6 @@
+{
+    "job": {
+        "interval": 100000,
+        "enabled": true
+    }
+}
